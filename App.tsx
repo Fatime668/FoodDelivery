@@ -1,26 +1,39 @@
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
-import React, { useEffect } from 'react'
-import SplashScreen from 'react-native-splash-screen'
+import { LogBox, SafeAreaView, StyleSheet, Text, View } from 'react-native'
+import React, { useEffect, useState } from 'react'
+import SplashScreen from './src/screens/SplashScreen'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { NavigationContainer } from '@react-navigation/native'
-import OnBoardingScreen from './src/screens/OnBoardingScreen'
-import LoginScreen  from './src/screens/LoginScreen'
-import StackNavigator from './src/navigation/stack'
 import { Provider } from 'react-redux'
 import store from './src/redux'
+import StartScreen from './src/screens/StartScreen'
 
 
 const Stack = createNativeStackNavigator()
+
+
+
 const App = () => {
-  useEffect(() => {
-    SplashScreen.hide();
-  
-  }, [])
-  
+  LogBox.ignoreAllLogs()
+  const [isLoading,setIsLoading] = useState<boolean>(true)
+  const Splash=({navigation}:any)=>{
+    useEffect(() => {
+      setTimeout(()=>{
+        <SplashScreen setIsLoading={setIsLoading}/>
+      },15000)
+    }, [])
+  }
   return (
-  <Provider store={store}>
-<StackNavigator/>
-  </Provider>
+
+
+      isLoading ? <SplashScreen setIsLoading={setIsLoading} /> :
+      <Provider store={store}>
+    <NavigationContainer>
+    <StartScreen/>
+    </NavigationContainer>
+      </Provider>
+
+
+
   )
 }
 

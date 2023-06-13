@@ -1,5 +1,7 @@
 import { Image, SafeAreaView, FlatList,StyleSheet,TouchableOpacity, Text, View, Dimensions, StatusBar } from 'react-native'
-import React from 'react'
+import React, { useRef, useState } from 'react'
+import Separator from '../components/Separator';
+import Display from '../utils/Display';
 
 const {width, height} = Dimensions.get('window');
 
@@ -40,8 +42,41 @@ const Slide = ({item}:any) => {
   );
 };
 
-  
+const pageStyle = (isActive:any) =>
+isActive
+  ? styles.page
+  : {...styles.page, backgroundColor: "#ccc"};
+
+  const Pagination = ({index}:any) => {
+    return (
+      <View style={styles.pageContainer}>
+        
+        {[...Array(slides.length).keys()].map((_, i) =>
+          i === index ? (
+            <View style={pageStyle(true)} key={i} />
+          ) : (
+            <View style={pageStyle(false)} key={i} />
+          ),
+        )}
+      </View>
+    );
+  };
+
 const OnBoardingScreen = ({navigation}:any) => {
+  const [welcomeListIndex,setWelcomeListIndex] = useState(0)
+
+  const welcomeList:any = useRef();
+  const onViewRef = useRef(({changed}:any) => {
+    setWelcomeListIndex(changed[0].index);
+  });
+  const viewConfigRef = useRef({viewAreaCoveragePercentThreshold: 50});
+
+  const pageScroll = () => {
+    welcomeList.current.scrollToIndex({
+      index: welcomeListIndex < 2 ? welcomeListIndex + 1 : welcomeListIndex,
+    });
+  };
+
   const [currentSlideIndex, setCurrentSlideIndex] = React.useState(0);
   const ref:any = React.useRef();
   const updateCurrentSlideIndex = (e:any) => {
@@ -49,23 +84,6 @@ const OnBoardingScreen = ({navigation}:any) => {
     const currentIndex = Math.round(contentOffsetX / width);
     setCurrentSlideIndex(currentIndex);
   };
-
-  const goToNextSlide = () => {
-    const nextSlideIndex = currentSlideIndex + 1;
-    if (nextSlideIndex != slides.length) {
-      const offset = nextSlideIndex * width;
-      ref?.current.scrollToOffset({offset});
-      setCurrentSlideIndex(currentSlideIndex + 1);
-    }
-  };
-
-  const skip = () => {
-    const lastSlideIndex = slides.length - 1;
-    const offset = lastSlideIndex * width;
-    ref?.current.scrollToOffset({offset});
-    setCurrentSlideIndex(lastSlideIndex);
-  };
-
  const Footer = () => {
     return (
       <View
@@ -75,6 +93,7 @@ const OnBoardingScreen = ({navigation}:any) => {
           paddingHorizontal: 20,
         }}>
         {/* Indicator container */}
+        <StatusBar hidden/>
         <View
           style={{
             flexDirection: 'row',
@@ -117,12 +136,13 @@ const OnBoardingScreen = ({navigation}:any) => {
                     backgroundColor: 'transparent',
                   },
                 ]}
-                onPress={skip}>
+                onPress={() => welcomeList.current.scrollToEnd()}>
                 <Text
                   style={{
                     fontWeight: 'bold',
                     fontSize: 12,
                     color: "#078189",
+                    fontFamily:'Poppins-ExtraLight',
                   }}>
                   SKIP
                 </Text>
@@ -130,13 +150,15 @@ const OnBoardingScreen = ({navigation}:any) => {
               <View style={{width: 15}} />
               <TouchableOpacity
                 activeOpacity={0.8}
-                onPress={goToNextSlide}
+                onPress={() => pageScroll()}
                 style={styles.btn}>
                 <Text
                   style={{
                     fontWeight: 'bold',
+                    padding:20,
                     fontSize: 12,
-                    color:"#fff"
+                    color:"#fff",
+                    fontFamily:'Poppins-ExtraLight',
                   }}>
                   NEXT
                 </Text>
@@ -152,16 +174,20 @@ const OnBoardingScreen = ({navigation}:any) => {
     <SafeAreaView style={{flex: 1}}>
     <StatusBar backgroundColor={COLORS.primary} />
     <FlatList
-      ref={ref}
-      scrollEnabled={false}
+      ref={welcomeList}
+      // scrollEnabled={false}
       showsHorizontalScrollIndicator={false}
       onMomentumScrollEnd={updateCurrentSlideIndex}
       contentContainerStyle={{height: height * 0.65,top:50}}
       horizontal
       data={slides}
       pagingEnabled
+      overScrollMode="never"
+      viewabilityConfig={viewConfigRef.current}
+      onViewableItemsChanged={onViewRef.current}
       renderItem={({item}) => <Slide item={item} />}
     />
+   
     <Footer />
   </SafeAreaView>
   )
@@ -175,13 +201,26 @@ const styles = StyleSheet.create({
     fontSize: 13,
     marginTop: 10,
     maxWidth: '70%',
+    fontWeight:"400",
     textAlign: 'center',
+    fontFamily:'Poppins-ExtraLight',
     lineHeight: 23,
+  },
+  page: {
+    height: 8,
+    width: 15,
+    backgroundColor: "077f7a",
+    borderRadius: 32,
+    marginHorizontal: 5,
+  },
+  pageContainer: {
+    flexDirection: 'row',
   },
   title: {
     color: "#000",
+    fontFamily:'Poppins-ExtraLight',
+    fontWeight:"400",
     fontSize: 22,
-    fontWeight: 'bold',
     marginTop: 20,
     textAlign: 'center',
   },
@@ -199,8 +238,7 @@ const styles = StyleSheet.create({
   },
   btn: {
     flex: 1,
-    height: 50,
-    borderRadius: 5,
+    borderRadius: 50,
     backgroundColor: '#078189',
     justifyContent: 'center',
     alignItems: 'center',
