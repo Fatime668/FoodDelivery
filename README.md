@@ -25,4 +25,11 @@ Hi, my name's Fatima and I'm from Azerbaijan
 ![Simulator Screenshot - iPhone 14 Pro - 2023-06-14 at 09 10 28](https://github.com/Fatime668/FoodDelivery/assets/99840451/6b56788a-f394-4c4d-8025-eed87613782c)
 ![Simulator Screenshot - iPhone 14 Pro - 2023-06-14 at 09 10 37](https://github.com/Fatime668/FoodDelivery/assets/99840451/358b49a5-4389-4238-a758-d51d61d57085)
 ![Simulator Screenshot - iPhone 14 Pro - 2023-06-14 at 09 10 42](https://github.com/Fatime668/FoodDelivery/assets/99840451/2a5b6ff4-c120-42ce-9e26-4ecbb38161ec)
-<img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/3c6de966-6254-42a5-ae67-0c256bef78a2" widht="100" height="100"/>
+<img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/3c6de966-6254-42a5-ae67-0c256bef78a2" widht="300" height="400"/>
+<img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/0d950098-ae8e-46da-bc50-4800cc41a66d" widht="300" height="400"/>
+<img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/2d1780eb-bba5-4bca-afc7-f9270497039a" widht="300" height="400"/>
+<img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/6b56788a-f394-4c4d-8025-eed87613782c" widht="300" height="400"/>
+<img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/358b49a5-4389-4238-a758-d51d61d57085" widht="300" height="400"/>
+
+<img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/3c6de966-6254-42a5-ae67-0c256bef78a2" widht="300" height="400"/>
+
