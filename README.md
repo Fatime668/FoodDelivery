@@ -7,10 +7,10 @@ Hi, my name's Fatima and I'm from Azerbaijan
 
 # 💻 Tech Stack:
 Built with
-<img width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"/>
-<img width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"/>
-<img width="50" height="50" src="https://www.edureka.co/blog/wp-content/uploads/2019/07/express-logo.png"/>
-<img width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png"/>
+<img width="50"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"/>
+<img width="90"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"/>
+<img width="90"  src="https://www.edureka.co/blog/wp-content/uploads/2019/07/express-logo.png"/>
+<img width="90"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png"/>
 
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=Fatime668&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
