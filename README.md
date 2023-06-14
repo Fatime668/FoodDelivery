@@ -18,7 +18,9 @@ Hi, my name's Fatima and I'm from Azerbaijan
 ---
 [![](https://visitcount.itsvg.in/api?id=Fatime668&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->![Simulator Screenshot - iPhone 14 Pro - 2023-06-14 at 09 10 18](https://github.com/Fatime668/FoodDelivery/assets/99840451/dc5c346d-16a8-443d-b0a3-45f2fbae7746)
+ScreenShots
+<img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/dc5c346d-16a8-443d-b0a3-45f2fbae7746" widht="300" height="400"/>
+
 
 <img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/3c6de966-6254-42a5-ae67-0c256bef78a2" widht="300" height="400"/>
 <img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/358b49a5-4389-4238-a758-d51d61d57085" widht="300" height="400"/>
