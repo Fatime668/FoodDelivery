@@ -14,9 +14,10 @@ Hi, my name's Fatima and I'm from Azerbaijan
 
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=Fatime668&theme=radical&no-frame=false&no-bg=false&margin-w=4)
-
+</br>
 ---
 [![](https://visitcount.itsvg.in/api?id=Fatime668&icon=0&color=0)](https://visitcount.itsvg.in)
+<img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/3c6de966-6254-42a5-ae67-0c256bef78a2" widht="300" height="400"/>
 <img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/3c6de966-6254-42a5-ae67-0c256bef78a2" widht="300" height="400"/>
 
 <img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/dc5c346d-16a8-443d-b0a3-45f2fbae7746" widht="300" height="400"/>
@@ -27,6 +28,5 @@ Hi, my name's Fatima and I'm from Azerbaijan
 <img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/2d1780eb-bba5-4bca-afc7-f9270497039a" widht="300" height="400"/>
 <img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/6b56788a-f394-4c4d-8025-eed87613782c" widht="300" height="400"/>
 
-<img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/3c6de966-6254-42a5-ae67-0c256bef78a2" widht="300" height="400"/>
 
 <img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/358b49a5-4389-4238-a758-d51d61d57085" widht="300" height="400"/>
