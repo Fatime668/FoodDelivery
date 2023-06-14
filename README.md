@@ -14,7 +14,6 @@ Hi, my name's Fatima and I'm from Azerbaijan
 
 <img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/a4fb30bd-565f-4ac8-8630-35f5902b01c6" widht="300" height="400"/>
 <img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/c44a1ab5-db94-4844-944f-add4a30faa3c" widht="300" height="400"/>
-<img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/6d9395be-4e6d-4436-82f6-f97102e389d1" widht="300" height="400"/>
 
 <img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/3c6de966-6254-42a5-ae67-0c256bef78a2" widht="300" height="400"/>
 
@@ -28,3 +27,5 @@ Hi, my name's Fatima and I'm from Azerbaijan
 
 
 <img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/358b49a5-4389-4238-a758-d51d61d57085" widht="300" height="400"/>
+<img src="https://github.com/Fatime668/FoodDelivery/assets/99840451/6d9395be-4e6d-4436-82f6-f97102e389d1" widht="300" height="400"/>
+
